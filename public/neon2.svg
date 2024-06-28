@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .neon-small {
+            fill: #ff14af; /* Color rosado claro */
+            stroke: #ff14af;
+            stroke-width: 1;
+            filter: drop-shadow(0 0 5px #ff14af) drop-shadow(0 0 10px #ff14af) drop-shadow(0 0 20px #ff14af);
+        }
+    </style>
+    <text x="50" y="130" font-family="Arial" font-size="30" class="neon-small">PODCAST</text>
+</svg>

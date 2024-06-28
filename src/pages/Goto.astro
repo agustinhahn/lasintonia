@@ -1,0 +1,32 @@
+---
+interface Props {
+	idItem: number;
+	title: string;
+	description: string;
+	link: string;
+	github: string;
+	tags: [string];
+}
+import Layout from "../layouts/Layout.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+---
+
+<Layout
+	title="Portfolio de Agustin Hahn - Desarrollador y programador web"
+	description="Contratame para construir soluciones"
+>
+	<main class="px-4">
+		<SectionContainer id="about">
+            <article>
+                <span class="mb-4 text-xl font-normal text-white-400 dark:text-gray-200 text-pretty">
+                    Nuestra premisa, es construir un puente hacia el futuro sin olvidarnos del presente. Exponer una perspectiva de cuestionamiento y busqueda para la optimizacion personal abordando diversos temas de interes los cuales nos permitan conectar con el oyente, individuo cuyas caracteristicas son similares a las nuestras, personas normales que nos enfrentamos constantemente con la lucha cotidiana de superarnos a nosotros mismos para alcanzar el exito, entendiendo esto como vivir de la manera que quiero sin remordimiento alguno.
+                    Esperamos contribuir con quien busque nuestra compania de la manera mas eficiente y sin dejar de lado nuestras raices y valores los cuales nos posicionaron donde estamos hoy. Con las virtudes construidas y con los defectos asumidos para mejorarlos.
+                </span>
+            </article>
+		</SectionContainer>
+		<a
+			class="fixed bottom-4 right-4 opacity-50 bg-gray-700 text-white px-4 py-2 rounded-lg shadow transition-colors hover:bg-yellow-200/50"
+			href="#nav">Volver arriba</a
+		>
+	</main>
+</Layout>

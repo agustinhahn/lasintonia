@@ -1,0 +1,28 @@
+---
+interface Props {
+	idItem: number;
+	title: string;
+	description: string;
+	link: string;
+	github: string;
+	tags: [string];
+}
+import Layout from "../layouts/Layout.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import About from "../components/About.astro";
+---
+
+<Layout
+	title="Portfolio de Agustin Hahn - Desarrollador y programador web"
+	description="Contratame para construir soluciones"
+>
+	<main class="px-4">
+		<SectionContainer id="about">
+            <About />
+		</SectionContainer>
+		<a
+			class="fixed bottom-4 right-4 opacity-50 bg-gray-700 text-white px-4 py-2 rounded-lg shadow transition-colors hover:bg-yellow-200/50"
+			href="#nav">Volver arriba</a
+		>
+	</main>
+</Layout>

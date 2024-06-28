@@ -1,0 +1,20 @@
+<svg width="500" height="200" viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .neon {
+            fill: #14eaff; /* Color rosado fuerte */
+            stroke: #14eaff;
+            stroke-width: 1;
+            filter: drop-shadow(0 0 5px #14eaff) drop-shadow(0 0 10px #14eaff) drop-shadow(0 0 20px #14eaff);
+            text-anchor: middle;
+        }
+        .neon-small {
+            fill: #ff14af; /* Color rosado claro */
+            stroke: #ff14af;
+            stroke-width: 1;
+            filter: drop-shadow(0 0 5px #ff14af) drop-shadow(0 0 10px #ff14af) drop-shadow(0 0 20px #ff14af);
+            text-anchor: middle;
+        }
+    </style>
+    <text x="50%" y="80" font-family="Arial" font-size="40" class="neon">LA SINTONIA</text>
+    <text x="50%" y="130" font-family="Arial" font-size="30" class="neon-small">PODCAST</text>
+</svg>
