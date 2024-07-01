@@ -1,0 +1,22 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+@media(max-width:761px){
+    .navbar{
+        flex-direction: column;
+    }
+
+    .navMobile{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .link{
+        margin-top: 20px;
+    }
+}
