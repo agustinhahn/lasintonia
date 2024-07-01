@@ -10,25 +10,30 @@ interface Props {
 
 import Layout from "../layouts/Layout.astro";
 import SectionContainer from "../components/SectionContainer.astro";
+import "./index.css";
+import YoutubeButton from "../components/YoutubeButton.astro";
 ---
 
 <Layout
-	title="Portfolio de Agustin Hahn - Desarrollador y programador web"
+	title="LaSintonia"
 	description="Contratame para construir soluciones"
 >
-	<main class="px-4">
+	<main class="container">
 		<SectionContainer>
-			<div class="flex flex-col justify-center">
+			<div class="divImg">
 				<img src="/public/neon.svg" alt="linyefoto" />
 			</div>
 		</SectionContainer>
 		<SectionContainer id="about">
-			<h2 class="text-3xl font-semibold mb-6 flex gap-x-2 items-center text-white-900 opacity-80">
+			<h2 class="subtitulo1">
 				UN ESPACIO PARA CONECTAR LA MENTE Y APAGAR EL RUIDO
 			</h2>
-			<h3 class="text-2xl mb-6 flex gap-x-3 items-center  text-white-900 opacity-80">
+			<h3 class="subtitulo2">
 				Animate a cuestionar un poco y despertar el potencial dormido
 			</h3>
+			<div class="buttonYt">
+				<YoutubeButton />
+			</div>
 		</SectionContainer>
 		<a
 			class="fixed bottom-4 right-4 opacity-50 bg-gray-700 text-white px-4 py-2 rounded-lg shadow transition-colors hover:bg-yellow-200/50"
@@ -36,13 +41,3 @@ import SectionContainer from "../components/SectionContainer.astro";
 		>
 	</main>
 </Layout>
-
-<style>
-	.fontSize {
-		font-size: 15px;
-	}
-
-	h2{
-		font-family: "Montserrat", sans-serif;
-	}
-</style>
